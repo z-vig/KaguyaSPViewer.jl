@@ -1,6 +1,15 @@
 module KaguyaSPViewer
 
-# Write your package code here.
-println("Development")
+export load_rfl,
+       load_loc,
+       plot_rfl,
+       plot_pointmap
+
+export RflData,
+       LocData
+
+include("LoadData.jl")
+
+include("PlotData.jl")
 
 end
